@@ -1,6 +1,9 @@
 name: Terraform
 
 on: push
+env:
+  AWS_ACCESS_KEY_ID: ${{ secrets.ACCESS_KEY }}
+  AWS_SECRETS_KEY: ${{ secrets.SECRETS_ACCESS_KEY }}
 
 jobs:
   terraform:
